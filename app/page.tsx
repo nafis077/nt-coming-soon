@@ -1,3 +1,4 @@
+﻿'use client';
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Clock, Instagram, Facebook, Twitter, Linkedin, Sparkles, CheckCircle2, ArrowRight, MapPin } from "lucide-react";
@@ -118,7 +119,7 @@ export default function ComingSoon() {
         }
       } catch {}
       setIsError(false);
-      setMsg("Thanks! You’re on the list.");
+      setMsg("Thanks! Youâ€™re on the list.");
       setEmail("");
     };
 
@@ -134,7 +135,7 @@ export default function ComingSoon() {
         setMsg("You're already on the list.");
       } else if (res.ok) {
         setIsError(false);
-        setMsg("Thanks! You’re on the list.");
+        setMsg("Thanks! Youâ€™re on the list.");
         setEmail("");
       } else if (res.status === 404 || res.status === 405) {
         // likely running in preview with no API route
@@ -263,3 +264,4 @@ export default function ComingSoon() {
     </div>
   );
 }
+
